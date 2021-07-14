@@ -1,26 +1,26 @@
 import React from 'react';
-import moose from './MOOSE.jpg';
-import bullCaribou from './Bull-Caribou.jpg' 
+import data from './data.json'
 import HornedBeast from './HornedBeast';
 
 class Main extends React.Component {
   render() {
+    let itemsToRender = [];
+      data.forEach(data => {
+        let beast = <HornedBeast
+          title={data.title}
+          image_url={data.image_url}
+          description={data.description}
+        />;
+        itemsToRender.push(beast);
+      });
     return (
       <main>
-        <HornedBeast
-          title="Moose"
-          imgURL={moose}
-          description="Moose are the largest deer species that inhabit in the Northern Hemisphere."
-        />
-        <HornedBeast
-          title="Caribou"
-          imgURL={bullCaribou}
-          description="Caribou also called as reindeer that found across North America, Europe and Asia."
-        />
+        {itemsToRender}
       </main>
     )
   }
 }
 
 export default Main;
+
 
