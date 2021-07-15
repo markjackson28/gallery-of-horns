@@ -2,12 +2,12 @@
 
 ## hornedBeasts
 
-This is an React app displaying horned beasts.
+This is an React app displaying horned beasts. If you like an image, you can click the image as many times as you like and the number will increase by 1.
 
 ### Author: Mark Thanadabouth
 
 ### Links and Resources
-* https://themysteriousworld.com/10-amazing-horns-in-the-animal-kingdom/
+* None
 
 ### Reflections and Comments
 * None
@@ -36,7 +36,7 @@ Number and name of feature: Feature 3: Bootstrap
 
 Estimate of time needed to complete: 1.5 hours
 
-Start time: _____
+Start time: 7:15pm
 
 Finish time: _____
 
