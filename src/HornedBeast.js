@@ -27,7 +27,7 @@ class HornedBeast extends React.Component {
     return (
       <Card className="beast">
         <Card.Title>{this.props.title}</Card.Title>
-        <Card.Img variant="bottom"
+        <Card.Img 
           onClick={() => {
             this.heart()
             this.favoriteCounter()
