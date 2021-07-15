@@ -1,14 +1,45 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+import './HornedBeast.css'
 
 class HornedBeast extends React.Component {
-  render(){
+  constructor(props) {
+    super(props);
+    this.state = {
+      favoriteNum: 0,
+      showHeart: false,
+    };
+  }
+
+  favoriteCounter = () => {
+    this.setState({
+      favoriteNum: this.state.favoriteNum + 1,
+    })
+  }
+
+  heart = () => {
+    this.setState({
+      showHeart: true,
+    });
+  }
+
+  render() {
     return (
-    <>
-      <h2>{this.props.title}</h2>
-      <img src={this.props.imgURL} alt="An animal with a horn" title="Horned Beast" />
-      <p>{this.props.description}</p>
-    </>
-    )
+      <Card className="beast">
+        <Card.Title>{this.props.title}</Card.Title>
+        <Card.Img 
+          onClick={() => {
+            this.heart()
+            this.favoriteCounter()
+          }}
+          src={this.props.image_url}
+          alt="An animal with a horn"
+          title="Horned Beast"
+        />
+        <Card.Text>{this.state.showHeart ? '❤️ ' : ''}{this.state.favoriteNum ? this.state.favoriteNum : ''}</Card.Text>
+        <Card.Text>{this.props.description}</Card.Text>
+      </Card>
+    );
   }
 }
 
