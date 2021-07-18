@@ -1,8 +1,8 @@
 # LAB - lab02
 
-## hornedBeasts
+## Gallery of Horns
 
-This is an React app displaying horned beasts. If you like an image, you can click the image as many times as you like and the number will increase by 1.
+This is an React app displaying horned beasts. If you like an beast, you can click the favorite button as many times as you like and the number will increase by 1. If you want to see the description of the image, click on the image and a pop up will show the description.
 
 ### Author: Mark Thanadabouth
 
@@ -12,7 +12,9 @@ This is an React app displaying horned beasts. If you like an image, you can cli
 ### Reflections and Comments
 * None
 
-Number and name of feature: Feature #1: Display images
+[Deployed Link](https://lucid-babbage-ba41df.netlify.app/)
+
+> Number and name of feature: Feature #1: Display images
 
 Estimate of time needed to complete: 3 hours
 
@@ -22,7 +24,7 @@ Finish time: 3:00pm
 
 Actual time needed to complete: 1.5 hours
 
-Number and name of feature: Feature #2: Allow users to vote for their favorite beast
+> Number and name of feature: Feature #2: Allow users to vote for their favorite beast
 
 Estimate of time needed to complete: 2 hours
 
@@ -32,12 +34,22 @@ Finish time: 5:00pm
 
 Actual time needed to complete: 45 minutes
 
-Number and name of feature: Feature 3: Bootstrap
+> Number and name of feature: Feature 3: Bootstrap
 
 Estimate of time needed to complete: 1.5 hours
 
 Start time: 7:15pm
 
-Finish time: _____
+Finish time: 9pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: about 2 hours
+
+> Number and name of feature: Feature 4: Display a Modal
+
+Estimate of time needed to complete: 5 hours
+
+Start time: 2pm
+
+Finish time: 5pm
+
+Actual time needed to complete: 3 hours
