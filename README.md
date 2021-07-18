@@ -1,8 +1,8 @@
 # LAB - lab02
 
-## hornedBeasts
+## Gallery of Horns
 
-This is an React app displaying horned beasts. If you like an image, you can click the image as many times as you like and the number will increase by 1.
+This is an React app displaying horned beasts. If you like an beast, you can click the favorite button as many times as you like and the number will increase by 1. If you want to see the description of the image, click on the image and a pop up will show the description.
 
 ### Author: Mark Thanadabouth
 
@@ -11,6 +11,8 @@ This is an React app displaying horned beasts. If you like an image, you can cli
 
 ### Reflections and Comments
 * None
+
+[Deployed Link](https://lucid-babbage-ba41df.netlify.app/)
 
 > Number and name of feature: Feature #1: Display images
 
