@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import './HornedBeast.css'
 
 class HornedBeast extends React.Component {
@@ -26,18 +27,21 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <Card className="beast">
-        <Card.Title>{this.props.title}</Card.Title>
-        <Card.Img 
+        <Card.Title>{this.props.beast.title}</Card.Title>
+        <Card.Img
           onClick={() => {
-            this.heart()
-            this.favoriteCounter()
+            this.props.handleShowModal(this.props.beast);
           }}
-          src={this.props.image_url}
-          alt="An animal with a horn"
-          title="Horned Beast"
+          src={this.props.beast.image_url}
+          alt={this.props.beast.description}
+          title={this.props.beast.title}
         />
         <Card.Text>{this.state.showHeart ? '❤️ ' : ''}{this.state.favoriteNum ? this.state.favoriteNum : ''}</Card.Text>
-        <Card.Text>{this.props.description}</Card.Text>
+        <Button onClick={() => {
+          this.heart();
+          this.favoriteCounter();
+        }}>Favorite
+        </Button>
       </Card>
     );
   }
