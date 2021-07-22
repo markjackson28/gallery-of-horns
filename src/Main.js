@@ -4,16 +4,16 @@ import CardColumns from 'react-bootstrap/CardColumns';
 import './Main.css';
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    
-    }
-  }
 
   handleChange = e => {
-    const numOfHorns = e.target.value
-    console.log(numOfHorns);
+    const numOfHorns = parseInt(e.target.value);
+    if (numOfHorns) {
+      this.props.data.filter(beast => beast.horns === numOfHorns);
+    }
+    // Filter over the data for each indv. beast
+    // let filteredItems = 
+    // Comparing the beast horns to the value of the onChange
+    // console.log(numOfHorns);
   }
 
   render() {
