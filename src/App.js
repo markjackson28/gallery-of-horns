@@ -2,9 +2,9 @@ import React from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import './App.css';
 import data from './data.json'
 import SelectBeast from './SelectBeast';
+import './App.css';
 
 
 
@@ -32,10 +32,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <SelectBeast showModal={this.state.showModal} handleCloseModal={this.handleCloseModal} beast={this.state.beast}/>
         <Header />
         <Main data={data} handleShowModal={this.handleShowModal}/>
         <Footer />
+        <SelectBeast showModal={this.state.showModal} handleCloseModal={this.handleCloseModal} beast={this.state.beast}/>
       </>
     )
   }
